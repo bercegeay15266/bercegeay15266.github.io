@@ -3,50 +3,95 @@
     <head>
         <tile>Meghan's Website</tile>
         <style>
-            .content{
-                background-color: pink;
-                color: grey
-            }
+               body {
+        background: rgb(183, 190, 190);
+        color: rgb(45, 45, 45);
+        padding: 10px;
+        font-family: arial;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
 
-                h3{
-                    color: black; 
-                }
+    /* navigation menu */
+    nav {
+        background: rgb(241, 113, 199);
+        margin: 0 auto;
+        display: flex;
+        padding: 10px;
+    }
+    h1 {
+        display: flex;
+        align-items: center;
+        color: white;
+        flex: 1;
+        margin: 0;
+    }
+    #nav-ul {
+        list-style-image: none;
+    }
+    .nav-li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
 
-            nav{
-                 background: grey;
-                 margin: 0 auto;
-                display: flex;
-                padding: 10px;
-            }
+    /* main container area beneath menu */
+    main {
+        background: rgb(245, 238, 219);
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar-img {
+        width: 200px;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    #interests {
+        border: 4px silver ridge;
+        padding: 8px;
+    }
+    h2, h3 {
+        margin: 0px;
+    }
     </style>
 
     </head>
     <body>
-        <div>
-            <nav>
+        <div id = "all contents">
+            <nav class = "links">
                     <h1>Meghan's Website</h1>
-                    <ul>
-                     <li>
+                    <ul id = "nav-ul">
+                     <li class = "nav - li">
                     <a href="index.html"> Home </a>
                     </li>
-                    <li>
+                    <li class = "nav - li">
                     <a href="portfolio.html"> Portfolio </a>
                      </li>
                     </ul>
             </nav>
             <main>
                 <!--Sidebar section-->
-                <div id = "smile">
-                    <img src= https://bloximages.newyork1.vip.townnews.com/nola.com/content/tncms/assets/v3/editorial/6/4d/64d83844-bbd0-5a29-9fbf-2c21be6081b2/5f7b37495b04e.image.jpg?resize=500%2C561>
+                <div class= "sidebar">
+                    <img src= https://bloximages.newyork1.vip.townnews.com/nola.com/content/tncms/assets/v3/editorial/6/4d/64d83844-bbd0-5a29-9fbf-2c21be6081b2/5f7b37495b04e.image.jpg?resize=500%2C561 width = "" height = "200">
                      <!--Content section-->
-                </div>
+                
                 <div class = "content">
-                    <h2 id = "name">Meghan Nicole</h2>
+                    <h2>Meghan Nicole</h2>
                     <p>Student at EA</p>
-                </div>
+                
                 <div>
-                   <h3 class = "content">Intrests</h3> 
-                   <ul>
+                   <h3 >Intrests</h3> 
+                   <ul id = "intrest">
                        <li>Cooking</li>
                        <li>Sports</li>
                        <li>Food</li>
@@ -54,5 +99,6 @@
                 </div>
             </main>
         </div>
+    </div>
     </body>
 </html>
